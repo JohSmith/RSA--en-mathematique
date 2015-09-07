@@ -2,3 +2,6 @@ Swag
 prout
 
 on peut dire qu'un algorithme de cryptage est optimal si le texte codé ne donne aucun élément pour deviner le texte non codé.
+
+la base du cryptage à clef publique, c'est que les algorithmes sont toujours découvert à n'importe quel moment, alors on joue
+sur la puissance de calculà la place.
