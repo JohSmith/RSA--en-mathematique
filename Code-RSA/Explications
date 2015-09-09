@@ -1,0 +1,5 @@
+Le code RSA :
+
+On va imaginer que nous sommes deux espions. A est la source du message, B est le receveur du message.
+
+B choisit deux nombres premiers (+100 chiffres chacun) 
