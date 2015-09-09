@@ -1,8 +1,9 @@
 Le code RSA :
 
-On va imaginer que nous sommes deux espions. A est la source du message, B est le receveur du message.
+On va imaginer que nous avons deux espions. A est la source du message, B est le receveur du message.
+Ils essaient de communiquer entre eux les codes de la bombe nucléaire.
 
-B choisit deux nombres premiers (+100 chiffres chacun). x et y sont secrets.                      x = ... y = ...
-Il va ensuite calculer le produit des deux pour obtenir n. n est public et la clé de chiffrement  n = x * y
-B continue en calculant O(n), le nombre de nombres premiers qui sont entre [1, n-1] et premiers
-avec n. (càd s'ils n'ont pas de diviseurs communs à part 1 et -1)                                 O(n) = {1,2,5,7, ... , n-1}
+B choisit deux nombres premiers (+100 chiffres chacun). x et y sont secrets.                       x = ... y = ...
+Il va ensuite calculer le produit des deux pour obtenir n. n est public et la clé de chiffrement   n = x * y
+B continue en calculant O(n), le nombre de nombres qui sont entre [1, n-1] et premiers
+avec n. (càd s'ils n'ont pas de diviseurs communs à part 1)                                        O(n) = {1,2,5,7, ... , n-1}
