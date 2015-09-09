@@ -9,4 +9,6 @@ B continue en calculant O(n), le nombre de nombres qui sont entre ]1, n-1] et pr
 avec n. (càd s'ils n'ont pas de diviseurs communs à part 1)                                        O(n) = |{1,2,5,7, ... , n-1}|
 B va déterminer une clé de cryptage e, un nombre premier à O(n) compris                            e premier à O(n)
 entre [1; n-1]. Cette clé est publique. e sera utilisée par A pour crypter son message.            e ∈ {1,2,5,7, ... , n-1}
-B va également créer une clé pour décrypter
+B va également créer une clé d pour décrypter le message que A va lui envoyer.
+Il existe un d appartenant à [1; n-1] tel que ed divisé par O(n) donne un reste de 1.              ∃ d ∈ {1,2,5,7, ... , n-1}
+Cette clé restera secrète.                                                                         tel que ed ≡ 1 (mod O(n))
