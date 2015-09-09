@@ -1,9 +1,0 @@
-Le principe du cryptage à clef publique, est que chaque personne à deux choses : 
-  - une clef publique accessible à chaque personne
-  - une clef privé que seul une personne détient.
-  
-la clef publique servira à crypter un message, tandis que la clef privé servira à décrypter le message.
-
-différence entre chiffrement par flux et par bloc ?
-
-AES ?
