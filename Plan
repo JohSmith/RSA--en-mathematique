@@ -1,11 +1,14 @@
-Ceci est juste une petite proposition de plan de votre Jubil préféré ^^
+Ceci est juste une petite proposition de plan de votre Jubil préféré ^^ (Autre proposition donnée par des frères, petite modification)
 
 1) Introduction
+  a) Définitions de la cryptologie, cryptographie, cryptanalyse
+  b) Histoire de la cryptologie
+2) Le code RSA
   a) Histoire de chiffrement RSA
   b) Définition de "clé publique" et "clé privée"
-2) Mise en place
+3) Mise en place
   a) Création de la clé publique 
   b) Création de la clé privée
-3) Fonctionnement
+4) Fonctionnement
   a) Le cryptage
   b) Le décryptage
