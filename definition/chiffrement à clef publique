@@ -1,0 +1,3 @@
+un chiffrement à clef publique est composé de deux choses :
+  - une clef publique (servant à crypter)
+  - une clef privé (servant à décrypter)
