@@ -7,4 +7,10 @@ d'un message pour que celles-ci ne soient pas lisibles de tous.
 Son but est triple : assurer la confidentialité, garantir l'authenticité et conserver l'intégrité des informations.
 La cryptologie est constituée de deux champs d'études : la cryptographie et la cryptanalyse.
 
-La cryptographie est 
+La cryptographie est l'art de transformer un message clair en un message inintelligible, afin de protéger ce message
+de celui qui ne possède pas les clefs de chiffrement ou les secrets nécessaires au déchiffrement du message.
+Cette écriture secrète consiste généralement à transposer les lettres de l'alphabet ou à les représenter par des signes convenus,
+de manière à ce que le sens de l'écrit ne soit accessible qu'au destinataire en possession du code.
+
+La cryptanalyse quant à elle consiste à tenter d'analyser le message codé afin de le déchiffrer et de retrouver le message réel
+sans avoir la possession de la clé ou du code ayant été utilisé préalablement pour chiffrer le message.
