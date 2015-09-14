@@ -1,3 +1,16 @@
 un chiffrement à clef publique est composé de deux choses :
   - une clef publique (servant à crypter)
   - une clef privé (servant à décrypter)
+
+
+c'est en 1976 que Witfield Diffie et Martin Hellman ont proposé un nouveau principe de chiffrement : le chiffrement asymétrique ( ou à clef publique ).
+
+le principe est que lors de l'envoie d'un message, on va d'abord demander la clef publique de la personne qui nous servira à crypter le message,
+puis lors de la réception du message, la personne pourra décoder avec ça clef privée.
+
+Ce système de cryptage est très utilisé, mais étant donné que cela nécessite une puissance de calcul assez considérable, on ne l'utilise que pour échanger
+le mot de passe du cryptage symétrique (lors d'échange sur internet).
+
+**** explication des maths ****
+
+pour trouver les nombres n et p, la box fera 
