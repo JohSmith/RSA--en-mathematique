@@ -3,6 +3,7 @@ Le code RSA :
 On va imaginer que nous avons deux espions. A est la source du message, B est le receveur du message.
 Ils essaient de communiquer entre eux les codes de la bombe nucléaire.
 
+
 B choisit deux nombres premiers (+100 chiffres chacun). x et y sont secrets.                       x = ... y = ...
 Il va ensuite calculer le produit des deux pour obtenir n. n est public. On l'appelle "clé"        n = x * y
 B continue en calculant O(n), le nombre de nombres qui sont entre ]1, n-1] et premiers
@@ -12,3 +13,10 @@ entre [1; n-1]. Cette clé est publique. e sera utilisée par A pour crypter son
 B va également créer une clé d pour décrypter le message que A va lui envoyer.
 Il existe un d appartenant à [1; n-1] tel que ed divisé par O(n) donne un reste de 1.              ∃ d ∈ {1,2,5,7, ... , n-1}
 Cette clé restera secrète.                                                                         tel que ed ≡ 1 (mod O(n))
+A va transformer le message en un nombre à partir des valeurs ASCII de chaque caractère.
+Ce nombre qui est à coder sera appelé m. Pour le crypter, il calcule le reste qu'on                m^e / n => q=... r = a
+va appeler a de la division de m^e par n. Ce a correspond au message crypté.                       ou m^e ≡ a (mod n)
+A envoie donc a à B.
+B pour décrypter ce message devra calculer le reste b (qui vaudra m au final) de la                a^d / n => q=... r = b
+division a^d par n                                                                                 a^d ≡ b (mod n)
+Les espions ont donc réussi à se transmettre le message et à le coder/décoder.                     b = m
