@@ -20,9 +20,20 @@ sans avoir la possession de la clé ou du code ayant été utilisé préalableme
 Histoire : 
 
 Exemples de codage de l'Antiquité
+Les premières techniques de cryptographie remontent à plusieurs siècles avant l'an 0.
+Entre le Ve et le VIIe siècle avant J.C. , les Spartiates inventairent la Scytale afin de crypter leurs messages.
+La scytale consiste en un bâton de bois autour duquel est entourée une bande de cuir ou de parchemin.
+L'expéditeur écrit son message sur toute la longueur de la scytale et déroule ensuite la bande qui apparaît alors couverte d'une suite de lettres sans signification.
+Le messager emportera la bande de cuir, l'utilisant comme ceinture, les lettres tournées vers l'intérieur.
+Le destinataire enroulera alors cette bande sur son bâton (de même diamètre) pour lire le message clair.
+
+D'autres méthodes furent utilisé dans l'Antiquité, comme celle utilisée par le roi de Babylone (Nabuchodonosor) qui tatouait
+ses messages sur le crane rasé de ses esclaves, puis qui attendait que leurs cheveux repoussent, 
+puis les envoyait à ses généraux qui rasaient alors le crane des esclaves pour lire le texte.
 
 
-Le chiffre de César est l'une des premières technique de chiffrement de messages. Apparu en 58 av J.-C. et utilisé par César 
+Le chiffre de César
+Le chiffre de César est l'une des premières technique de chiffrement de messages. Apparu en 58 av J.C. et utilisé par César 
 afin de communiquer avec ses généraux, cette technique avait pour but de chiffrer le message en remplaçant chaque lettre du
 texte original par la lettre se situant 3 lettres plus loin dans l'alphabet. Ce chiffrement consistait donc en un décalage
 de 3 lettres dans l'alphabet, par exemple le A dans le texte original devenait un D dans le texte chiffré.
@@ -32,7 +43,9 @@ Cette technique n'est plus utilisée du fait de sa simplicité, il est beaucoup 
 Code de Vigenere
 
 
+
 Code Enigma
+
 
 
 Finalement le code RSA
