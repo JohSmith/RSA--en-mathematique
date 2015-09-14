@@ -20,3 +20,20 @@ A envoie donc a à B.
 B pour décrypter ce message devra calculer le reste b (qui vaudra m au final) de la                a^d / n => q=... r = b
 division a^d par n                                                                                 a^d ≡ b (mod n)
 Les espions ont donc réussi à se transmettre le message et à le coder/décoder.                     b = m
+
+
+Ce qu'il faut savoir c'est que le code ASCII prend en compte l'intégralité du message à crypter et les crypte ensemble.
+Un message d'une lettre sera plus sensible à la casse car il aura toujours la même valeur, alors qu'un message de deux lettres
+pourra prendre plusieurs valeurs différentes.
+
+
+Démonstration :
+
+On va admettre que A essaie de dire à B "le président les cache".
+En ASCII ça donne : 1081013212114130115105100101110116
+B choisit deux nombres premiers secrets (d'une taille de 4 chiffres pour qu'on puisse le faire à calculette)
+x = 2081 y = 3947
+B va donc faire le produit de x et y pour obtenir n.
+n = x*y = 2081*3947 = 8213707            n = 8213707
+B continue en déterminant O(n) 
+
