@@ -40,11 +40,33 @@ de 3 lettres dans l'alphabet, par exemple le A dans le texte original devenait u
 Cette technique n'est plus utilisée du fait de sa simplicité, il est beaucoup trop facilement cassable aujourd'hui.
 
 
-Chiffre de Vigenere
+Chiffre de Vigenère
+Le chiffre de Vigenère, du nom de son créateur, est apparu au XVIème siècle. 
+C'est une amélioration du code de César car il possède une clé, mot ou phrase, qui va alors permettre
+de crypter une même lettre de plusieurs façons contrairement au chiffre de César.
+Pour crypter, on choisit une clé (mot ou phrase). A chaque lettre du texte clair on fait correspondre une 
+lettre de la clé (la clé étant répétée autant de fois que nécessaire),
+cette clé définit le décalage pour chaque lettre du message (A: décalage de 0 cran, B: 1 cran, C: 2 crans, ..., Z: 25 crans).
+En posant C le texte codé, T le texte et K la clé, on peut traduire ceci par la formule :
+
+C = T + K [mod 26]
+
+Exemple : La clé est bachelier et le texte clair est Chiffre de Vigenere
+
+Clair	    C	H	I	F	F	R	  E	D	E	  V	I	G	E	N	E 	R	E
+Clef	    B	A	C	H	E	L	  I	E	R	  B	A	C	H	E	L	  I	E
+Décalage	1	0	2	7	4	11	8	4	17	1	0	2	7	4	11	8	4
+Chiffré 	D	H	K	M	J	C 	M	H	V	  W	I	I	L	R	P	  Z	I
+
+On obtient alors en texte chiffré : DHKMJCMHVWIILRPZI
+On voit l'amélioration par rapport au chiffre de César avec par exemple le E qui est chiffré
+de 5 façons différentes en : M V L P et I.
 
 
-
-Code Enigma
+La machine Enigma
+Inventé vers 1920 et très utilisé par les Allemands pour communiquer pendant la Seconde Guerre Mondiale, la machine 
+Enigma a permis de crypter les messages de manière quasi-incassable jusqu'à ce qu'Alan Turing trouve une faille à ce type 
+de cryptage.
 
 
 
