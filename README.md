@@ -1,4 +1,4 @@
-# RSA-et-fun-incroyable-en-math-matique
+# RSA
 GITHUB pour le projet Mathématique/Informatique de notre équipe de Winners
 
 
