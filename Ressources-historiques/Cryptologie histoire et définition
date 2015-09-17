@@ -68,6 +68,16 @@ Inventé vers 1920 et très utilisé par les Allemands pour communiquer pendant 
 Enigma a permis de crypter les messages de manière quasi-incassable jusqu'à ce qu'Alan Turing trouve une faille à ce type 
 de cryptage.
 
+Fonctionnement de la machine Enigma : 
+
+La machine Enigma était équipée d'un clavier pour la saisie du message, de différentes roues pour le codage, et enfin d'un tableau lumineux pour le résultat.
+A chaque pression d'une touche du clavier, une lettre du panneau lumineux s'illuminait.
+Il y avait ainsi 3 roues de codage, appelées « Brouilleur Rotor », qui reliaient le clavier au panneau lumineux.
+Par exemple, avec un seul rotor, lorsque l'on appuie sur B le courant passe par le rotor et allume A sur le panneau lumineux :
+
+Première image
+
+
 
 
 Finalement le code RSA
