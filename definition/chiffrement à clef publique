@@ -11,6 +11,15 @@ puis lors de la réception du message, la personne pourra décoder avec ça clef
 Ce système de cryptage est très utilisé, mais étant donné que cela nécessite une puissance de calcul assez considérable, on ne l'utilise que pour échanger
 le mot de passe du cryptage symétrique (lors d'échange sur internet).
 
-**** explication des maths ****
+**** comment les box font pour trouver p et q ****
 
-pour trouver les nombres n et p, la box fera 
+le problème des box est qu'elles ne sont pas faites pour faire des calculs compliqués, et donc
+pour trouver ces nombres aléatoirement, elle va prendre un nombre aléatoirement de 154 chiffres
+ : en binaire elle fait 511 bits au hasard et le dernier elle mettra "1" Pour avoir un nombre
+ impaire. Ensuite elle va calculer si ce nombre est premier, avec un test de primalité 
+ probabiliste (donc qui a des chances de ne pas être vrai) comme celui de Miller-Rabin.
+ Si le test dit que ce n'est pas bon, le routeur rajoutera "2" et recommencera.
+ En général, cette opération de rajouter "2" est faites 300 fois avant de dire "propablement
+ vrai". Ce probablement étant de l'ordre de 10^30 de se tromper.
+ 
+ 
