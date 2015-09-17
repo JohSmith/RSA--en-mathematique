@@ -41,4 +41,11 @@ B continue en déterminant le e dans l'intervalle {1,2,...,523}
 B choisit 241.
 e = 241
 
+    241 | 99 | R
+    1   | 0  | 241
+    0   | 1  | 99
+    1   | -2 | 43
+    -2  | 5  | 13
+    7   |-17 |  4
+    -23 | 56 |  1
 
