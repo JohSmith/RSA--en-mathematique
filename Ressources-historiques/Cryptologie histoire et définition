@@ -23,7 +23,8 @@ Exemples de codage de l'Antiquité
 Les premières techniques de cryptographie remontent à plusieurs siècles avant l'an 0.
 Entre le Ve et le VIIe siècle avant J.C. , les Spartiates inventairent la Scytale afin de crypter leurs messages.
 La scytale consiste en un bâton de bois autour duquel est entourée une bande de cuir ou de parchemin.
-L'expéditeur écrit son message sur toute la longueur de la scytale et déroule ensuite la bande qui apparaît alors couverte d'une suite de lettres sans signification.
+L'expéditeur écrit son message sur toute la longueur de la scytale et déroule ensuite la bande qui apparaît alors couverte
+d'une suite de lettres sans signification.
 Le messager emportera la bande de cuir, l'utilisant comme ceinture, les lettres tournées vers l'intérieur.
 Le destinataire enroulera alors cette bande sur son bâton (de même diamètre) pour lire le message clair.
 
@@ -63,21 +64,53 @@ On voit l'amélioration par rapport au chiffre de César avec par exemple le E q
 de 5 façons différentes en : M V L P et I.
 
 
-La machine Enigma
-Inventé vers 1920 et très utilisé par les Allemands pour communiquer pendant la Seconde Guerre Mondiale, la machine 
+
+La Machine Enigma
+Inventée vers 1920 et très utilisée par les Allemands pour communiquer pendant la Seconde Guerre Mondiale, la machine 
 Enigma a permis de crypter les messages de manière quasi-incassable jusqu'à ce qu'Alan Turing trouve une faille à ce type 
 de cryptage.
 
 Fonctionnement de la machine Enigma : 
 
-La machine Enigma était équipée d'un clavier pour la saisie du message, de différentes roues pour le codage, et enfin d'un tableau lumineux pour le résultat.
-A chaque pression d'une touche du clavier, une lettre du panneau lumineux s'illuminait.
-Il y avait ainsi 3 roues de codage, appelées « Brouilleur Rotor », qui reliaient le clavier au panneau lumineux.
+La machine Enigma ressemble à une machine à écrire; elle dispose d'un clavier 
+avec les 26 lettres de l'alphabet ainsi que d'un écran lumineux de 26 lampes, une pour chaque lettre.
+A chaque fois que l'on presse une touche du clavier, une lettre du panneau lumineux s'allume.
+La machine Enigma est équipée de 3 roues pour le codage, appelées « Brouilleur Rotor », qui reliaient le clavier au 
+panneau lumineux.
 Par exemple, avec un seul rotor, lorsque l'on appuie sur B le courant passe par le rotor et allume A sur le panneau lumineux :
 
 Première image
-La suite dans les liens de Image
+
+Afin de rendre le codage de la machine plus complexe, le rotor tourne d'un cran après chaque pression d'une touche. 
+À la seconde pression on obtient donc :
+
+Deuxième image
+
+La machine Enigma était composée de 3 ou 4 rotors pour le cryptage de ses messages.
+
+Prenons l'exemple d'une machine équipée de 3 rotors.
+Les deuxième et troisième rotors avançaient d'un cran quand le précédent faisait un tour complet.
+Il y avait aussi un tableau de connexion qui mélangeait les lettres de l'alphabet et un réflecteur
+qui faisait repasser le courant dans les rotors avant l'affichage.
+
+  /*
+  Afin de chiffrer un message, il convient de connaître une clé secrète partagée avec le destinataire de la communication.
+  Cette clé se compose des informations nécessaires pour initialiser la machine, i.e.
+  la position des 6 fiches du tableau de connexions,
+  l'ordre dans lequel les trois brouilleurs sont disposés (par exemple d'abord le 2 puis le 3 et enfin le 1),
+  la position initiale de chaque brouilleur, cette position étant repérée par une des 26 lettres de l'alphabet
+  qui sont gravées sur la circonférence de chaque brouilleur.
+  Une clé secrète est donc de la forme
+  [(B,J),(E,G),(P,Z),(A,T),(M,N),(D,X),(2,3,1),(A,V,P)]
+  Une fois la machine configurée, il suffit de taper un texte pour le chiffrer; après le codage de chaque lettre,
+  les brouilleurs tournent comme précédemment expliqué. Pour déchiffrer un texte, il faut connaître la clé secrète,
+  i.e. la position initiale des fiches et des brouilleurs. Le déchiffrement est ensuite identique au chiffrement.
+  
+  Les machines Enigma peuvent chiffrer un texte selon 1016 (17 576 * 6 * 100 391 791 500) combinaisons différentes !
+  */
 
 
-
-Finalement le code RSA
+Le cryptage RSA
+Le chiffrement RSA est une méthode de cryptage inventée en 1977 par Ron Rivest, Adi Shamir et Len Adleman.
+C'est le système de chiffrement à clé publique le plus utilisé aujourd'hui, mais c'est surtout la seule méthode de cryptage
+que les scientifiques n'ont toujours pas réussi à casser. La suite de ce rapport sera donc consacré à l'explication de ce cryptage.
