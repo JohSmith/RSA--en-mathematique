@@ -7,7 +7,8 @@ Ils essaient de communiquer entre eux les codes de la bombe nucléaire.
 B choisit deux nombres premiers (+100 chiffres chacun). x et y sont secrets.                       x = ... y = ...
 Il va ensuite calculer le produit des deux pour obtenir n. n est public. On l'appelle "clé"        n = x * y
 B continue en calculant O(n), le nombre de nombres qui sont entre ]1, n-1] et premiers
-avec n. (càd s'ils n'ont pas de diviseurs communs à part 1)                                        O(n) = |{1,2,5,7, ... , n-1}|
+avec n. (càd s'ils n'ont pas de diviseurs communs à part 1)                                        O(n) = |{1,2,5,7, ... , n-1}| premiers avec n
+                                                                                                   ou O(n) = (p-1)*(q-1)
 B va déterminer une clé de cryptage e, un nombre premier à O(n) compris                            e premier à O(n)
 entre [1; n-1]. Cette clé est publique. e sera utilisée par A pour crypter son message.            e ∈ {1,2,5,7, ... , n-1}
 B va également créer une clé d pour décrypter le message que A va lui envoyer.
@@ -35,17 +36,47 @@ B choisit deux nombres premiers secrets (d'une taille de 4 chiffres pour qu'on p
 x = 17 y = 31
 B va donc faire le produit de x et y pour obtenir n.
 n = x*y = 17*31 = 527            n = 527
-B continue en déterminant O(n). Il y en a 99.
-O(n) = 99
+B continue en déterminant O(n). Il y en a 480.
+O(n) = 480
 B continue en déterminant le e dans l'intervalle {1,2,...,523}
 B choisit 241.
 e = 241
 
-    241 | 99 | R
-    1   | 0  | 241
-    0   | 1  | 99
-    1   | -2 | 43
-    -2  | 5  | 13
-    7   |-17 |  4
-    -23 | 56 |  1
+   480  | 241 |  R
+   ________________
+    1   | 0   | 480
+    0   | 1   | 241
+    1   | -1  | 239
+    -1  | 2   | 2
+    120 |-239 |  1                      
+    
+d est négatif, il faut qu'on en trouve un positif inclut dans l'intervalle [1, 526]
+Donc on applique le théorème de Bezout comme ceci :
+
+241x + 480y = 1
+241 (-239) + 480 (120) = 1
+241x + 480y = 241 (-239) + 480 (120)
+241 ( x + 239 ) = 480 ( 120 - y )
+
+241 | 480 ( 120 - y ) et 241 et 480 sont premiers entre eux donc d'après le théorème de Gauss 241 | ( 120 - y )
+
+Donc 120 - y =  241k
+         - y =  241k - 120
+           y = -241k + 120
+           
+           241 ( x + 239 ) = 480 ( 120 - ( 241k + 120))
+                 x + 239   = 480k
+                 x         = 480k - 239
+                 
+            Avec k = 1      x =  480 - 239 =  241
+                            y = -241 + 120 = -121
+                            241 * 241 + 480 * ( -121 ) = 1
+                            
+                            
+On vient donc de trouver un d positif, 241 donc d = 241
+
+                            
+            
+            
+                 
 
