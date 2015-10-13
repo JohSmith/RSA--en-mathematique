@@ -1,3 +1,17 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ////CE RESUME SERVIRA POUR PRESENTER LE FONCTIONNEMENT DU CODE RSA PENDANT LA PRESENTATION ORALE////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+1) Création des clés
+	a) Clé privée
+		Le récepteur choisi 2 nombres premiers "p" et "q".
+		Le récepteur calcul "d" : 
+		d = ...
+		
+	b) Clé publique
+		La clé publique est composé de 2 éléments "n" et "e".
+		n = p * q
+		Le récepteur choisi e tel qu'il soit premier avec (p-1)(q-1).
+		Le récepteur publi la clé publique. Celle-ci peut être donnée soous la forme (RSA, n, e).
+
+....
