@@ -6,8 +6,8 @@ Ils essaient de communiquer entre eux les codes de la bombe nucléaire.
 
 B choisit deux nombres premiers (+100 chiffres chacun). x et y sont secrets.                       x = ... y = ...
 Il va ensuite calculer le produit des deux pour obtenir n. n est public. On l'appelle "clé"        n = x * y
-B continue en calculant O(n), le nombre de nombres qui sont entre ]1, n-1] et premiers
-avec n. (càd s'ils n'ont pas de diviseurs communs à part 1)                                        O(n) = |{1,2,5,7, ... , n-1}| premiers avec n
+B continue en calculant O(n), le nombre de nombres premiers avec n
+qui sont entre ]1, n-1]. (càd s'ils n'ont pas de diviseurs communs à part 1)                       O(n) = |{1,2,5,7, ... , n-1}| premiers avec n
                                                                                                    ou O(n) = (p-1)*(q-1)
 B va déterminer une clé de cryptage e, un nombre premier à O(n) compris                            e premier à O(n)
 entre [1; n-1]. Cette clé est publique. e sera utilisée par A pour crypter son message.            e ∈ {1,2,5,7, ... , n-1}
@@ -31,7 +31,7 @@ pourra prendre plusieurs valeurs différentes.
 Démonstration :
 
 On va admettre que A essaie de dire à B "le président les cache".
-En ASCII ça donne : 1081013212114130115105100101110116
+En ASCII ça donne : 10 81 01 32 12 11 41 30 11 51 05 10 01 01 11 01 16
 B choisit deux nombres premiers secrets (d'une taille de 4 chiffres pour qu'on puisse le faire à calculette)
 x = 17 y = 31
 B va donc faire le produit de x et y pour obtenir n.
@@ -74,8 +74,10 @@ Donc 120 - y =  241k
                             
                             
 On vient donc de trouver un d positif, 241 donc d = 241
+Grâce à l'algorithme de notre super espion A , le résultat c'est à dire a, vaut 136.
+A transmet donc a à B.
 
-                            
+
             
             
                  
