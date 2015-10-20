@@ -12,6 +12,7 @@
 		La clé publique est composé de 2 éléments "n" et "e".
 		n = p * q
 		Le récepteur choisi e tel qu'il soit premier avec (p-1)(q-1).
+		Pour trouver facilement e on utilise la formule (non exostive) suivante :
 		e = k * (p-1)(q-1) + 1 avec k un entier naturel quelconque.
 		Le récepteur publi la clé publique. Celle-ci peut être donnée soous la forme (RSA, n, e).
 
