@@ -6,7 +6,7 @@
 	a) Clé privée
 		Le récepteur choisi 2 nombres premiers "p" et "q".
 		Le récepteur calcul "d" : 
-		d = ...
+		d = (1/e) Mod ((p-1)(q-1))
 		
 	b) Clé publique
 		La clé publique est composé de 2 éléments "n" et "e".
