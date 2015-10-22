@@ -30,6 +30,8 @@
 		C = B^e mod n avec C un bloc du message chiffré
 		
 		
-		
-		
 	b) Décrypter un message
+		On commence par déchifrer les blocs cryptés "C" :
+		B = C^d mod n
+		
+		On converti ensuite le nombre obtenu dans l'alphabet de départ.
