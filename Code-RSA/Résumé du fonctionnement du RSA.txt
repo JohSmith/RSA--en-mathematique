@@ -7,6 +7,8 @@
 		Le récepteur choisi 2 nombres premiers "p" et "q".
 		Le récepteur calcul "d" : 
 		d = (1/e) Mod ((p-1)(q-1))
+		On peut aussi l'écrire sous la forme :
+		e·d mod ((p-1)(q-1)) = 1
 		
 	b) Clé publique
 		La clé publique est composé de 2 éléments "n" et "e".
@@ -23,6 +25,9 @@
 		
 		On découpe ensuite le message en blocs de tailles égales.
 		(La taille d'un bloc doit être supérieur à la taille d'unn caractère pour empécher de faire des analyses de 			fréquences)
+		
+		On chiffre ensuite chaqu'un des blocs "B" : 
+		C = B^e mod n avec C un bloc du message chiffré
 		
 		
 		
