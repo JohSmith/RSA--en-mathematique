@@ -20,5 +20,7 @@
 	a) Crypter un message
 		On commence par convertire son message en un nombre. 
 		(Par exemple en remplaçant la lettre par sa position dans l'alphabet).
+		On découpe ensuite le message en blocs de tailles égales.
+		(Plus la taille est grande plus il est difficile de faire une analyse de fréquences)
 		
 	b) Décrypter un message
