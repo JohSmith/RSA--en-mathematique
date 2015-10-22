@@ -18,4 +18,7 @@
 
 2) L'utilisation
 	a) Crypter un message
+		On commence par convertire son message en un nombre. 
+		(Par exemple en remplaçant la lettre par sa position dans l'alphabet).
+		
 	b) Décrypter un message
