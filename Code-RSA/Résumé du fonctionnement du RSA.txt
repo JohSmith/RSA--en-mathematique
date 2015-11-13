@@ -6,8 +6,6 @@
 	a) Clé privée
 		Le récepteur choisi 2 nombres premiers "p" et "q".
 		Le récepteur calcul "d" : 
-		d = (1/e) Mod ((p-1)(q-1))
-		On peut aussi l'écrire sous la forme :
 		e·d mod ((p-1)(q-1)) = 1
 		
 	b) Clé publique
